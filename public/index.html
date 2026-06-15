@@ -5,131 +5,106 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SAT Math Solver</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Courier+Prime:wght@400;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <div class="announcement-bar">
-    <span>✦</span>
-    <span>ESTABLISHED 2024</span>
-    <span class="bar-sep">·</span>
-    <span>SAT MATHEMATICS INSTITUTE</span>
-    <span class="bar-sep">·</span>
-    <span>POWERED BY ARTIFICIAL INTELLIGENCE</span>
-    <span>✦</span>
-  </div>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
 
   <header>
     <div class="header-inner">
       <div class="logo">
-        <div class="logo-icon">√</div>
-        <div class="logo-text-wrap">
-          <span class="logo-text">SAT Math Solver</span>
-          <span class="logo-sub">By Behruz Sabirov</span>
+        <div class="logo-mark">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 19 L8 5 L12 15 L16 9 L20 19"/></svg>
         </div>
+        <span class="logo-text">MathSolve</span>
       </div>
-      <nav class="header-nav">
-        <span>Algebra</span>
-        <span>Geometry</span>
-        <span>Functions</span>
-        <span>Statistics</span>
-      </nav>
+      <div class="header-badge">
+        <span class="badge-dot"></span>
+        SAT Ready
+      </div>
     </div>
   </header>
 
   <main>
     <section class="hero">
-      <div class="hero-ornament">✦ &nbsp; ✦ &nbsp; ✦</div>
-      <h1>Solve Any SAT<br/>Math Problem</h1>
-      <div class="hero-rule">
-        <div class="rule-line"></div>
-        <span class="rule-diamond">◆</span>
-        <div class="rule-line"></div>
+      <div class="hero-tags">
+        <span class="tag indigo">Algebra</span>
+        <span class="tag teal">Geometry</span>
+        <span class="tag violet">Functions</span>
+        <span class="tag amber">Statistics</span>
       </div>
-      <p class="subtitle">Paste your problem below and receive a precise,<br/>step-by-step solution with SAT examination tips.</p>
+      <h1>Ace your SAT<br/><span class="gradient-text">Math section.</span></h1>
+      <p class="subtitle">Drop any SAT math problem below and get a precise, step-by-step solution with exam strategies — instantly.</p>
     </section>
 
-    <div class="stats-strip">
-      <div class="stat-item">
-        <span class="stat-num">800</span>
-        <span class="stat-label">Max Score</span>
-      </div>
-      <div class="stat-sep">|</div>
-      <div class="stat-item">
-        <span class="stat-num">4</span>
-        <span class="stat-label">Math Domains</span>
-      </div>
-      <div class="stat-sep">|</div>
-      <div class="stat-item">
-        <span class="stat-num">∞</span>
-        <span class="stat-label">Problems Solved</span>
-      </div>
-      <div class="stat-sep">|</div>
-      <div class="stat-item">
-        <span class="stat-num">AI</span>
-        <span class="stat-label">Powered</span>
-      </div>
-    </div>
-
     <div class="card input-card">
-      <div class="card-corner tl"></div>
-      <div class="card-corner tr"></div>
-      <div class="card-corner bl"></div>
-      <div class="card-corner br"></div>
-
-      <label class="input-label" for="problem">
-        <span class="roman">I.</span> Enter Your Problem
-      </label>
+      <div class="card-glow"></div>
+      <label class="input-label" for="problem">Your problem</label>
       <textarea
         id="problem"
-        placeholder="e.g. If 3x + 7 = 22, what is the value of 6x?&#10;&#10;Or paste the full problem including answer choices (A), (B), (C), (D)..."
-        rows="6"
+        placeholder="e.g. If 3x + 7 = 22, what is the value of 6x?&#10;&#10;Paste the full problem with answer choices (A) (B) (C) (D)..."
+        rows="5"
       ></textarea>
 
       <div class="examples">
-        <span class="examples-label">— Quick Examples —</span>
+        <span class="examples-label">Try an example</span>
         <div class="example-btns">
-          <button class="example-btn" data-problem="If x² - 5x + 6 = 0, what are the values of x?">Quadratic</button>
-          <button class="example-btn" data-problem="A line passes through the points (2, 3) and (6, 11). What is the slope of the line?&#10;&#10;(A) 1/2&#10;(B) 2&#10;(C) 4&#10;(D) 8">Slope</button>
-          <button class="example-btn" data-problem="In a class of 30 students, 18 play soccer and 12 play basketball. If 5 students play both sports, how many students play neither?">Word Problem</button>
-          <button class="example-btn" data-problem="The function f(x) = 2x² + bx + 8 has a vertex at x = 3. What is the value of b?">Functions</button>
+          <button class="example-btn indigo" data-problem="If x² - 5x + 6 = 0, what are the values of x?">Quadratic</button>
+          <button class="example-btn teal" data-problem="A line passes through the points (2, 3) and (6, 11). What is the slope of the line?&#10;&#10;(A) 1/2&#10;(B) 2&#10;(C) 4&#10;(D) 8">Slope</button>
+          <button class="example-btn amber" data-problem="In a class of 30 students, 18 play soccer and 12 play basketball. If 5 students play both sports, how many students play neither?">Word Problem</button>
+          <button class="example-btn violet" data-problem="The function f(x) = 2x² + bx + 8 has a vertex at x = 3. What is the value of b?">Functions</button>
         </div>
       </div>
 
       <button id="solve-btn" onclick="solve()">
         <span class="btn-text">Solve Problem</span>
-        <span class="btn-arrow">→</span>
+        <span class="btn-icon">→</span>
       </button>
     </div>
 
     <div class="features-row">
-      <div class="feature-col">
-        <span class="feature-icon">✎</span>
-        <span class="feature-title">Step-by-Step</span>
-        <span class="feature-desc">Full working shown for every problem</span>
+      <div class="feature-item">
+        <div class="feature-icon-wrap fi-indigo">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+        </div>
+        <div>
+          <p class="feature-title">Step-by-step</p>
+          <p class="feature-desc">Full working shown for every problem</p>
+        </div>
       </div>
-      <div class="feature-col">
-        <span class="feature-icon">◉</span>
-        <span class="feature-title">SAT-Focused</span>
-        <span class="feature-desc">Tips aligned with the College Board exam</span>
+      <div class="feature-item">
+        <div class="feature-icon-wrap fi-violet">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <div>
+          <p class="feature-title">Instant answers</p>
+          <p class="feature-desc">Streaming solutions in real time</p>
+        </div>
       </div>
-      <div class="feature-col">
-        <span class="feature-icon">⚡</span>
-        <span class="feature-title">Instant</span>
-        <span class="feature-desc">Streaming answers in real time</span>
+      <div class="feature-item">
+        <div class="feature-icon-wrap fi-pink">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <div>
+          <p class="feature-title">SAT-focused tips</p>
+          <p class="feature-desc">Aligned with College Board exam</p>
+        </div>
       </div>
     </div>
 
     <div class="card solution-card" id="solution-card" style="display:none">
-      <div class="card-corner tl"></div>
-      <div class="card-corner tr"></div>
-      <div class="card-corner bl"></div>
-      <div class="card-corner br"></div>
+      <div class="card-glow solution-glow"></div>
       <div class="solution-header">
-        <span class="solution-title"><span class="roman">II.</span> Solution</span>
-        <button class="copy-btn" onclick="copySolution()" title="Copy solution">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+        <div class="solution-title-wrap">
+          <span class="solution-pulse"></span>
+          <span class="solution-title">Solution</span>
+        </div>
+        <button class="copy-btn" onclick="copySolution()">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
           Copy
         </button>
       </div>
@@ -138,21 +113,14 @@
     </div>
 
     <div class="error-box" id="error-box" style="display:none">
-      <span class="error-icon">✕</span>
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
       <span id="error-msg"></span>
     </div>
   </main>
 
   <footer>
     <div class="footer-inner">
-      <div class="footer-rule">
-        <div class="rule-line"></div>
-        <span class="rule-diamond">✦</span>
-        <div class="rule-line"></div>
-      </div>
-      <p class="footer-main">SAT Math Solver</p>
-      <p class="footer-domains">Algebra &middot; Advanced Math &middot; Problem Solving &middot; Geometry &amp; Trigonometry</p>
-      <p class="footer-credit">Crafted by Behruz Sabirov &mdash; 2024</p>
+      <p>SAT Math Solver &mdash; Built by <span class="footer-name">Behruz Sabirov</span></p>
     </div>
   </footer>
 
