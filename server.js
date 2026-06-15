@@ -36,8 +36,7 @@ app.post("/api/solve", async (req, res) => {
   try {
     const stream = client.messages.stream({
       model: "claude-opus-4-8",
-      max_tokens: 2048,
-      thinking: { type: "adaptive" },
+      max_tokens: 8192,
       system: SYSTEM_PROMPT,
       messages: [{ role: "user", content: problem.trim() }],
     });
